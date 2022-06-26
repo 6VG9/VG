@@ -69,6 +69,7 @@ nav {
 .navigation {
   display: inline-flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .navigation li{
   margin: 15px;
