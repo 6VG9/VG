@@ -6,29 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1 id="theme">Верстальщики говна</h1>
+        <h1 class="header__title">Верстальщики говна</h1>
         <hr>
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html" class="nava">Главная</a></li>
-                <li><a href="Community.html" class="nava">Сообщество</a></li>
-                <li><a href="News.html" class="nava">Новости</a></li>
-                <li><a href="Courses.html" class="nava">Курсы</a></li>
-                <li><a href="Merch.html" class="nava">Мерч</a></li>
-                <li><a href="D:\Верстальщики Говна\Site\О нас" class="nava">Онлайн-казино</a></li>
-                <li><a href="About_us.html" class="nava">О нас</a></li>
+        <nav class="menu">
+            <ul class="menu__body">
+                <li><a href="index.html" class="menu__link">Главная</a></li>
+                <li><a href="Community.html" class="menu__link">Сообщество</a></li>
+                <li><a href="News.html" class="menu__link">Новости</a></li>
+                <li><a href="Courses.html" class="menu__link">Курсы</a></li>
+                <li><a href="Merch.html" class="menu__link">Мерч</a></li>
+                <li><a href="Online-casino.html" class="menu__link">Онлайн-казино</a></li>
+                <li><a href="About_us.html" class="menu__link">О нас</a></li>
             </ul>
         </nav>
     </header>
+    <section class="introduction">
+        <p class="introduction__text" data-aos="zoom-in" data-aos-duration="1500">Добро пожаловать на govnosite.com. Здесь вы найдёте:</p>
+    </section>
+    <section class="block1-3" data-aos="fade-up" data-aos-duration="1500">
+        <h2 class="block1-3__title">Всю необходимую информацию об участниках нашего сообщества</h2>
+        <ul class="block1-3__list">
+            <li class="card">
+                <a href="Kovalchuk.html"><img src="stylesheets/images.png" alt="Вегофский" height="300px" width="250px"></a>
+                <div class="container">
+                    <h3><a href="Kovalchuk.html">Компьютерный Гений</a></h3>
+                    <p>Неизвестно практически ничего</p>
+                </div>
+            </li>
+            <li class="card">
+                <a href="Kovalchuk.html"><img src="stylesheets/Ковальчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                <div class="container">
+                    <h3><a href="Kovalchuk.html">Виктор Ковальчук</a></h3>
+                    <p>Главный гей, репер и отсосник города Винница</p>
+                </div>
+            </li>
+            <li class="card">
+                <a href="Roshchahovski.html"><img src="stylesheets/Картавый.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                <div class="container">
+                    <h3><a href="Roshcha.html">Денис Рощаховский</a></h3>
+                    <p>Проклятый своей матерью, обманщик, дьявол и иуда</p>
+                </div>
+            </li>
+            <li class="card">
+                <a href="Zaharchyk.html"><img src="stylesheets/Захарчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                <div class="container">
+                    <h3><a href="Zaharchyk.html">Никита Захарчук</a></h3>
+                    <p>Представитель радикальной группировки АУЕ</p>
+                </div>
+            </li>    
+        </ul>
+        <div class="button">
+            <a href="Community.html" class="button__a">Подробнее</a>
+        </div>
+    </section>
+    <section>
+    </section>
     <footer>
         <p>Верстальщики Говна &copy; 2022</p>
-        <a href="https://discord.gg/T8U5Enqv"><img src="stylesheets/discord-icon.png" alt="Дискорд сервер" height="80px"></a>
+        <a href="https://discord.gg/nDxj95k8"><img src="stylesheets/discord-icon.png" alt="Дискорд сервер" height="80px"></a>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
