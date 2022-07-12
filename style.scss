@@ -2,6 +2,26 @@
 
 @import url(stylesheets/nullstyle.css);
 
+/*Для всех страниц*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.content {
+  flex: 1 1 auto;
+}
+
+$mw: 1500px;
+
 /* Шапка сайта */
 
 .header {
@@ -14,6 +34,8 @@
   }
   .menu{
     text-align: center;
+    max-width: $mw;
+    margin: 0 auto;
   }
   .menu__body {
     display: inline-flex;
@@ -45,12 +67,7 @@
     transition: transform 0.5s;
   }
 }
-body {
-  font-family: 'Roboto', sans-serif;
-}
-::-webkit-scrollbar {
-  width: 0px;
-}
+/* Подвал сайта */
 footer {
   bottom: 0;
   background-color:black;
@@ -82,16 +99,20 @@ footer {
 .introduction{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 700px;
-  width: 100%;
+  align-items: center; 
+  height: 75vh;
   &__text{
     font-size: 27px;
     text-align: center;
+    line-height: 30px;
   }
 }
-.block1-3 {
+.cards1 {
   background: black;
+  &__container{
+    max-width: $mw;
+    margin: 0 auto;
+  }
   &__title{
     color: white;
     font-size: 25px;
@@ -112,8 +133,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 30px;
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -124,8 +144,12 @@ footer {
     width: 200px;
   }
 }
-.block2-4 {
+.cards2 {
   background: white;
+  &__container{
+    max-width: $mw;
+    margin: 0 auto;
+  }
   &__title{
     color: black;
     font-size: 25px;
@@ -157,4 +181,40 @@ footer {
     width: 200px;
   }
 }
+/*Страницы с биографиями*/
+
+.info {
+  margin: 10px;
+  &__container{
+    max-width: $mw;
+    margin: 0 auto;
+    border: 2px solid black;
+  }
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__short{
+    padding: 10px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+  }
+  &__list {
+
+  }
+  &__list li{
+    padding: 5px;
+  }
+  &__biography{
+    flex: 1 1 auto;
+  }
+}
+
 

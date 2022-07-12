@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <div class="wrapper">
+        <header class="header">
         <h1 class="header__title">Верстальщики говна</h1>
         <hr>
         <nav class="menu">
@@ -23,52 +24,55 @@
                 <li><a href="About_us.html" class="menu__link">О нас</a></li>
             </ul>
         </nav>
-    </header>
-    <section class="introduction">
-        <p class="introduction__text" data-aos="zoom-in" data-aos-duration="1500">Добро пожаловать на govnosite.com. Здесь вы найдёте:</p>
-    </section>
-    <section class="block1-3" data-aos="fade-up" data-aos-duration="1500">
-        <h2 class="block1-3__title">Всю необходимую информацию об участниках нашего сообщества</h2>
-        <ul class="block1-3__list">
-            <li class="card">
-                <a href="Kovalchuk.html"><img src="stylesheets/images.png" alt="Вегофский" height="300px" width="250px"></a>
-                <div class="container">
-                    <h3><a href="Kovalchuk.html">Компьютерный Гений</a></h3>
-                    <p>Неизвестно практически ничего</p>
+        </header>
+        <div class="content">
+            <section class="introduction">
+                <p class="introduction__text" data-aos="zoom-in" data-aos-duration="1500">Добро пожаловать на govnosite.com. Здесь вы найдёте:</p>
+            </section>
+            <section class="cards1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="cards1__container">
+                <h2 class="cards1__title">Всю необходимую информацию об участниках нашего сообщества</h2>
+                <ul class="cards1__list">
+                    <li class="card">
+                        <a href="Comp_Genius.html"><img src="stylesheets/images.png" alt="Вегофский" height="300px" width="250px"></a>
+                        <div class="container">
+                            <h3><a href="Comp_Genius.html">Компьютерный Гений</a></h3>
+                            <p>Неизвестно практически ничего</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <a href="Kovalchuk.html"><img src="stylesheets/Ковальчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                        <div class="container">
+                            <h3><a href="Kovalchuk.html">Виктор Ковальчук</a></h3>
+                            <p>Главный гей, репер и отсосник города Винница</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <a href="Roshchahovski.html"><img src="stylesheets/Картавый.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                        <div class="container">
+                            <h3><a href="Roshcha.html">Денис Рощаховский</a></h3>
+                            <p>Проклятый своей матерью, обманщик, дьявол и иуда</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <a href="Zaharchyk.html"><img src="stylesheets/Захарчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
+                        <div class="container">
+                            <h3><a href="Zaharchyk.html">Никита Захарчук</a></h3>
+                            <p>Представитель радикальной группировки АУЕ</p>
+                        </div>
+                    </li>    
+                </ul>
                 </div>
-            </li>
-            <li class="card">
-                <a href="Kovalchuk.html"><img src="stylesheets/Ковальчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
-                <div class="container">
-                    <h3><a href="Kovalchuk.html">Виктор Ковальчук</a></h3>
-                    <p>Главный гей, репер и отсосник города Винница</p>
-                </div>
-            </li>
-            <li class="card">
-                <a href="Roshchahovski.html"><img src="stylesheets/Картавый.jpg" alt="Вегофский" height="300px" width="250px"></a>
-                <div class="container">
-                    <h3><a href="Roshcha.html">Денис Рощаховский</a></h3>
-                    <p>Проклятый своей матерью, обманщик, дьявол и иуда</p>
-                </div>
-            </li>
-            <li class="card">
-                <a href="Zaharchyk.html"><img src="stylesheets/Захарчук.jpg" alt="Вегофский" height="300px" width="250px"></a>
-                <div class="container">
-                    <h3><a href="Zaharchyk.html">Никита Захарчук</a></h3>
-                    <p>Представитель радикальной группировки АУЕ</p>
-                </div>
-            </li>    
-        </ul>
-        <div class="button">
-            <a href="Community.html" class="button__a">Подробнее</a>
+                <div class="button">
+                    <a href="Community.html" class="button__a">Подробнее</a>
+                </div>   
+            </section>
         </div>
-    </section>
-    <section>
-    </section>
-    <footer>
-        <p>Верстальщики Говна &copy; 2022</p>
-        <a href="https://discord.gg/nDxj95k8"><img src="stylesheets/discord-icon.png" alt="Дискорд сервер" height="80px"></a>
-    </footer>
+        <footer>
+            <p>Верстальщики Говна &copy; 2022</p>
+            <a href="https://discord.gg/nDxj95k8"><img src="stylesheets/discord-icon.png" alt="Дискорд сервер" height="80px"></a>
+        </footer>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

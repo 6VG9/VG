@@ -1,6 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 @import url(stylesheets/nullstyle.css);
+/*Для всех страниц*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 /* Шапка сайта */
 .header {
   background: black;
@@ -13,6 +40,8 @@
 }
 .header .menu {
   text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .header .menu__body {
   display: -webkit-inline-box;
@@ -56,14 +85,7 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-}
-
+/* Подвал сайта */
 footer {
   bottom: 0;
   background-color: black;
@@ -110,24 +132,28 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 700px;
-  width: 100%;
+  height: 75vh;
 }
 .introduction__text {
   font-size: 27px;
   text-align: center;
+  line-height: 30px;
 }
 
-.block1-3 {
+.cards1 {
   background: black;
 }
-.block1-3__title {
+.cards1__container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.cards1__title {
   color: white;
   font-size: 25px;
   text-align: center;
   padding: 20px;
 }
-.block1-3__list {
+.cards1__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,40 +162,43 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.block1-3 a {
+.cards1 a {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
-.block1-3 .card {
+.cards1 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 30px;
 }
-.block1-3 .card:hover {
+.cards1 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.block1-3 .container {
+.cards1 .container {
   text-align: center;
   padding: 2px 16px;
   width: 200px;
 }
 
-.block2-4 {
+.cards2 {
   background: white;
 }
-.block2-4__title {
+.cards2__container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.cards2__title {
   color: black;
   font-size: 25px;
   text-align: center;
   padding: 20px;
 }
-.block2-4__list {
+.cards2__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,12 +207,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.block2-4 a {
+.cards2 a {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
-.block2-4 .card {
+.cards2 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -191,12 +220,48 @@ footer {
   background-color: white;
   margin: 20px 10px 20px 10px;
 }
-.block2-4 .card:hover {
+.cards2 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.block2-4 .container {
+.cards2 .container {
   text-align: center;
   padding: 2px 16px;
   width: 200px;
+}
+
+/*Страницы с биографиями*/
+.info {
+  margin: 10px;
+}
+.info__container {
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.info__title {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+.info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.info__short {
+  padding: 10px;
+}
+.info__subtitle {
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+}
+.info__list li {
+  padding: 5px;
+}
+.info__biography {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
