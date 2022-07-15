@@ -167,23 +167,6 @@ footer {
   color: black;
   font-size: 20px;
 }
-.cards1 .card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background-color: white;
-  margin: 30px;
-}
-.cards1 .card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.cards1 .container {
-  text-align: center;
-  padding: 2px 16px;
-  width: 200px;
-}
 
 .cards2 {
   background: white;
@@ -212,22 +195,26 @@ footer {
   color: black;
   font-size: 20px;
 }
-.cards2 .card {
+
+.card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: white;
-  margin: 20px 10px 20px 10px;
+  max-width: 250px;
+  margin: 20px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
 }
-.cards2 .card:hover {
+.card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.cards2 .container {
+.card__container {
   text-align: center;
   padding: 2px 16px;
-  width: 200px;
 }
 
 /*Страницы с биографиями*/
@@ -238,6 +225,14 @@ footer {
   max-width: 1500px;
   margin: 0 auto;
   border: 2px solid black;
+}
+@media (max-width: 767px) {
+  .info__container .info__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .info__title {
   font-size: 25px;
@@ -251,11 +246,16 @@ footer {
 }
 .info__short {
   padding: 10px;
+  font-size: 17px;
 }
 .info__subtitle {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 550;
   text-align: center;
+}
+.info__text {
+  padding: 10px;
+  font-size: 20px;
 }
 .info__list li {
   padding: 5px;
