@@ -176,11 +176,6 @@ footer {
     max-width: $mw;
     margin: 0 auto;
     border: 2px solid black;
-    @media (max-width:767px) {
-      .info__row {
-        flex-direction: column;
-      }
-    }
   }
   &__title {
     font-size: 25px;
@@ -202,6 +197,7 @@ footer {
   &__text {
     padding: 10px;
     font-size: 20px;
+    line-height: 25px;
   }
   &__list {
   }
@@ -211,6 +207,16 @@ footer {
   &__biography{
     flex: 1 1 auto;
   }
-
 }
 
+@media (max-width:767px) {
+  .info__row {
+    flex-direction: column;
+  }
+  .card {
+    margin: 15px 5px;
+  }
+  .menu__body li{
+    margin: 5px;
+  }
+}
