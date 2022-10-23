@@ -120,7 +120,7 @@ $mw: 1500px;
     text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 25px;
+    padding: 23px;
   }
   .header__burger {
     display: block;
@@ -167,7 +167,9 @@ $mw: 1500px;
     transform: scale(0);
   }
   .header__line {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .header__list {
     position: fixed;
