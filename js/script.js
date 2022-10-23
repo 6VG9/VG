@@ -1,19 +1,16 @@
-function calcSumm(num1, num2, more, less) {
-    let numSumm = num1 + num2;
-    
-    if (numSumm > 3) {
-        more();
-    } 
-    else {
-        less();
-    }
-}
+$(document).ready(function () {
+    $('.header__burger').click(function (event) {
+        $('.header__burger,.header__list').toggleClass('active');
+        $('body').toggleClass('lock');
+    })
+})
 
-function showMoreMessage() {
-    console.log('Больше чем 3');
-}
-function showLessMessage() {
-    console.log('Меньше чем 3');
-}
-calcSumm(1, 1, showMoreMessage, showLessMessage);
+const mainElement = document.documentElement;
+const mainElementWidth = mainElement.clientWidth;
+console.log(mainElementWidth);
+const VGLogo = document.querySelector('.header__title');
+console.log(VGLogo);
 
+if (mainElementWidth <= 767) {
+    VGLogo.innerHTML = 'VG';
+};
