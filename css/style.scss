@@ -94,7 +94,7 @@ $mw: 1500px;
     font-size: 1rem;
   }
   .introduction {
-    margin: 35px;
+    margin: 25px;
   }
   .introduction p{
     font-size: 1.3rem;
@@ -167,9 +167,7 @@ $mw: 1500px;
     transform: scale(0);
   }
   .header__line {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
   }
   .header__list {
     position: fixed;
