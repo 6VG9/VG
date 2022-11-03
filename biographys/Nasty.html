@@ -12,11 +12,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1 class="header__title">Верстальщики говна</h1>
-            <div class="header__burger">
-                <span></span>
+            <div class="adaptive">
+                <h1 class="header__title">Verstalshchiki Govna</h1>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <hr class="header__line">
             </div>
-            <hr class="header__line">
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="../index.html" class="header__link">Главная</a></li>
@@ -65,10 +67,13 @@
         </div>
         <footer>
             <p>Верстальщики Говна &copy; 2022</p>
-            <a href="https://discord.gg/JufhBeScex"><img src="../images/discord-icon.png" alt="Дискорд сервер" height="80px"></a>
+            <a href="https://discord.gg/JufhBeScex"><img class="icon" src="../images/icons/discord1.svg" alt="Дискорд сервер" width="100px"></a>
+            <a href="https://www.youtube.com/channel/UCqU8iO9FoBje95szN6lUTSQ"><img class="icon" src="../images/icons/youtube.svg" alt="Ютуб канал"></a>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
     <script>
         AOS.init();
     </script>
