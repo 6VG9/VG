@@ -78,6 +78,9 @@ $mw: 1500px;
 }
 
 @media (max-width:767px){
+  .content {
+    margin-top: 70px;
+  }
   .button a{
     font-size: 0.1rem;
   }
